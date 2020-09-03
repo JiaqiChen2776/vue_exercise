@@ -1,4 +1,5 @@
 # vue_shop
+An exercise project.
 
 ## Project setup
 ```
