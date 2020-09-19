@@ -4,7 +4,7 @@
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>商品管理</el-breadcrumb-item>
-      <el-breadcrumb-item>商品分类</el-breadcrumb-item>
+      <el-breadcrumb-item>分类参数</el-breadcrumb-item>
     </el-breadcrumb>
 
     <!-- 卡片视图区域 -->
@@ -222,7 +222,7 @@ export default {
     addParamsDialogClosed() {
       this.$refs.addParamsFormRef.resetFields()
     },
-    async addParams() {
+    addParams() {
       this.$refs.addParamsFormRef.validate(async valid => {
         if (!valid) return
         const { data: res } = await this.$http.post(`categories/${this.cateId}/attributes`, { attr_name: this.addParamsForm.attr_name, attr_sel: this.activeName })
