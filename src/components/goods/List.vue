@@ -21,7 +21,7 @@
       </el-row>
 
       <!-- 商品列表 -->
-       <el-table :data="goodsList" style="width: 100%">
+      <el-table :data="goodsList" style="width: 100%">
          <el-table-column type="index"></el-table-column>
         <el-table-column prop="goods_name" label="商品名称"></el-table-column>
         <el-table-column prop="goods_price" label="商品价格(元)" width="90px"></el-table-column>
